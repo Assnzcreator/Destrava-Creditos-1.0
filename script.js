@@ -108,18 +108,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 playerVsl.playVideo();
             }
         });
-
-        // Autoplay após 3 segundos
-        setTimeout(() => {
-            if (vslOverlay.style.display !== 'none') {
-                vslOverlay.style.display = 'none';
-                if (playerVsl && typeof playerVsl.playVideo === 'function') {
-                    // Para o autoplay funcionar sem clique, o vídeo PRECISA estar mudo (regra dos navegadores)
-                    playerVsl.mute(); 
-                    playerVsl.playVideo();
-                }
-            }
-        }, 3000);
     }
 
     // --- FAQ ACCORDION ---
