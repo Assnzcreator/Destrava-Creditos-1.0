@@ -102,7 +102,7 @@ document.addEventListener('DOMContentLoaded', () => {
     window.onYouTubeIframeAPIReady = function() {
         // Substitua 'SEU_ID_VSL' pelo código do seu vídeo no YouTube
         playerVsl = new YT.Player('youtube-vsl', {
-            videoId: 'dQw4w9WgXcQ', // Vídeo de exemplo
+            videoId: 'wlwJouu0p_M', // ID da VSL real
             playerVars: { 
                 'autoplay': 0, 
                 'controls': 0, // Esconde a barra de progresso e botões do YouTube
