@@ -1,0 +1,5 @@
+# Ignorar arquivos de vídeo grandes para evitar erros no GitHub
+*.mp4
+*.mov
+*.avi
+*.mkv

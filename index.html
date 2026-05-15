@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destrava Crédito 1.0 - William Molina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BACKGROUND ORBS (Glassmorphism Effect) -->
+    <div class="bg-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <header class="hero text-center">
+        <div class="container">
+            <div class="reveal">
+                <span class="badge-glass"><span id="badge-text" style="display: inline-block; transition: all 0.3s ease;">PARA PESSOA FÍSICA E MEIs</span></span>
+            </div>
+            <h1 class="reveal delay-1">SAIBA AGORA como <br><span class="shine-text">DESTRAVAR SUA LINHA DE CRÉDITO</span></h1>
+            
+            <div class="reveal delay-2" style="max-width: 650px; margin: 0 auto 30px;">
+                <div class="glass-panel" style="padding: 20px;">
+                    <p style="font-size: 1.15rem; font-weight: 500; margin: 0;">Seja pra aumentar seu limite, conseguir um financiamento pra carro, imóvel ou empréstimo...</p>
+                </div>
+            </div>
+            
+            <p class="alert-sound reveal delay-2" style="font-weight: 600; font-size: 0.9rem; color: var(--text-muted); margin-bottom: 30px;">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:inline-block; margin-right: 6px; vertical-align: text-bottom;"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon><path d="M15.54 8.46a5 5 0 0 1 0 7.07"></path><path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path></svg> VERIFIQUE SE O SEU SOM ESTÁ LIGADO
+            </p>
+
+            <div class="vsl-wrapper reveal delay-3" style="position: relative;">
+                <!-- O vídeo real (escondido até o clique) -->
+                <video id="vsl-player" width="100%" height="100%" style="border-radius: var(--radius-lg); object-fit: contain; background: #000; display: none;" controls>
+                    <source src="vsl.mp4" type="video/mp4">
+                    <source src="vsl.mov" type="video/quicktime">
+                    Seu navegador não suporta o player de vídeo.
+                </video>
+                
+                <!-- Overlay com o botão de Play Premium -->
+                <div id="vsl-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.8)); z-index: 2; border-radius: var(--radius-lg); cursor: pointer;">
+                    <div class="play-icon"></div>
+                    <p style="color: #fff; margin-top: 15px; font-weight: 600; font-size: 0.9rem; letter-spacing: 1px;">CLIQUE PARA ASSISTIR</p>
+                </div>
+            </div>
+
+            <div class="reveal delay-3" style="max-width: 400px; margin: 0 auto;">
+                <a href="#checkout" class="btn">QUERO DESTRAVAR MEU CRÉDITO A PARTIR DE HOJE</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- THE PROBLEM / RATING -->
+    <section class="problem bg-surface">
+        <div class="container">
+            <div class="glass-panel reveal">
+                <p style="font-size: 1.15rem; margin-bottom: 20px;"><strong>É SIMPLES:</strong> Esqueça o que você ouviu falar de que banco tá travando seu crédito por conta do seu score, ou do histórico do seu nome...</p>
+                <p style="font-size: 1.15rem; margin-bottom: 20px;">Ao contrário do que todos pensam, <strong style="color: var(--text-heading);">BANCO NÃO OLHA</strong> pra esse dado quando vai liberar ou travar seu crédito.</p>
+                <p style="font-size: 1.15rem; margin: 0;">A verdade é que os bancos (digitais ou físicos) têm dados sobre seu perfil como cliente.. Quanto ganha, gasta, paga e deve. E baseado nisso ele te avalia internamente com uma pontuação, e te define como Elegível ou não de receber a linha de crédito, empréstimo ou financiamento que pediu.</p>
+            </div>
+
+            <div class="rating-highlight reveal mt-4" style="margin-top: 40px;">
+                <h2>O nome dessa avaliação se chama <span class="shine-text">RATING bancário</span>.</h2>
+                <p style="font-size: 1.1rem; opacity: 0.9;">E é exatamente ele que está travando seu crédito, toda vez que você tenta.</p>
+                
+                <div style="margin-top: 30px;">
+                    <div class="quote-bubble">"Perfil não elegível no momento."</div>
+                    <div class="quote-bubble">"Não foi possível dessa vez."</div>
+                    <div class="quote-bubble">"Tente novamente em 90 dias."</div>
+                </div>
+            </div>
+
+            <div class="info-bar reveal mt-4" style="margin-left: auto; margin-right: auto;">
+                <p style="font-size: 1.1rem; margin: 0;">Eles falam como se o problema fosse o prazo, e não o que o banco enxerga quando digita seu CPF ( seu Rating). MESMO quando sua conta naquele banco é nova... Ele consegue ter essas informações sobre você através de um sistema chamado <strong style="color: var(--text-heading);">Open Finance</strong>.</p>
+            </div>
+            
+            <div class="fact-list reveal delay-1">
+                <div class="fact-card">
+                    <div class="icon-check">✓</div>
+                    Fato é que só ter nome limpo não significa nada..
+                </div>
+                <div class="fact-card">
+                    <div class="icon-check">✓</div>
+                    Bancos NÃO OLHAM pra Score, Serasa e afins...
+                </div>
+                <div class="fact-card">
+                    <div class="icon-check">✓</div>
+                    Quem olha são lojas e crediários.
+                </div>
+                <div class="fact-card featured">
+                    <div class="icon-check" style="background: var(--text-heading);">!</div>
+                    Banco olha pra RATING. E é ele que você precisa melhorar.
+                </div>
+            </div>
+
+            <div class="reveal mt-4" style="margin-top: 50px; text-align: center; max-width: 400px; margin-left: auto; margin-right: auto;">
+                <a href="#checkout" class="btn">QUERO LIBERAR MEU CRÉDITO HOJE</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOCIAL PROOF -->
+    <section class="social-proof">
+        <div class="container text-center">
+            <h2 class="reveal mb-4" style="margin-bottom: 40px;">VEJA ALGUNS QUE JÁ CONSEGUIRAM:</h2>
+            <div class="benefits-grid reveal delay-1">
+                <div class="card" style="padding: 0; overflow: hidden; background: #fff; border: 1px solid var(--border-light); box-shadow: 0 15px 50px rgba(0,0,0,0.1); height: 100%; display: flex; align-items: center; justify-content: center;">
+                    <img src="depoimento-1.jpg" alt="Print de Depoimento WhatsApp" style="width: 100%; max-height: 500px; object-fit: contain; display: block; border-radius: var(--radius-lg); padding: 10px;">
+                </div>
+                <div class="card" style="padding: 0; overflow: hidden; background: transparent; border: none; box-shadow: 0 15px 50px rgba(0,0,0,0.1); position: relative; height: 100%;">
+                    <video style="width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--radius-lg);" controls preload="metadata">
+                        <source src="depoimento-video-1.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AUTHORITY / WILLIAM MOLINA -->
+    <section class="authority bg-surface" style="padding-top: 120px; padding-bottom: 120px;">
+        <div class="container">
+            <div class="author-card reveal">
+                
+                <!-- Avatar Placeholder -->
+                <div style="width: 150px; height: 150px; border-radius: 50%; background: linear-gradient(135deg, rgba(0, 230, 118, 0.2), rgba(0, 200, 83, 0.05)); border: 4px solid #fff; box-shadow: 0 15px 35px rgba(0,230,118,0.2); margin: 0 auto 30px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;">
+                    <img src="foto-perfil.jpg" alt="Foto de William Molina" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+
+                <p style="text-transform: uppercase; letter-spacing: 2px; font-weight: 800; color: var(--primary-dark); font-size: 0.85rem; margin-bottom: 10px;">Especialista em Crédito</p>
+                <h2 style="font-size: 3rem; margin-bottom: 30px; background: linear-gradient(135deg, #111827 0%, #4B5563 100%); -webkit-background-clip: text; color: transparent;">William Molina</h2>
+                
+                <div class="glass-panel" style="margin-bottom: 40px; border-left: 5px solid var(--primary);">
+                    <p style="font-size: 1.2rem; margin: 0; font-weight: 500; color: var(--text-heading);">"Fui Consultor de Crédito para gigantes do mercado. Conheço o algoritmo dos bancos por dentro e sei exatamente o passo a passo pra você conseguir seu crédito."</p>
+                </div>
+                
+                <div class="glass-panel stats-container reveal delay-1" id="stats-section" style="padding: 40px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center; margin-bottom: 40px;">
+                    <div style="border-right: 1px solid var(--border-light);">
+                        <span class="stat-val" style="color: var(--primary-dark);"><span class="count-up" data-target="67">0</span>,8k</span>
+                        <span class="stat-lbl" style="font-weight: 700;">Seguidores</span>
+                    </div>
+                    <div style="border-right: 1px solid var(--border-light);">
+                        <span class="stat-val" style="color: var(--primary-dark);"><span class="count-up" data-target="896">0</span></span>
+                        <span class="stat-lbl" style="font-weight: 700;">Postagens</span>
+                    </div>
+                    <div>
+                        <span class="stat-val" style="color: var(--primary-dark);">+<span class="count-up" data-target="5">0</span></span>
+                        <span class="stat-lbl" style="font-weight: 700;">Anos de Exp.</span>
+                    </div>
+                </div>
+                
+                <a href="https://instagram.com/williammolina_92" target="_blank" style="display: inline-flex; align-items: center; justify-content: center; font-size: 0.95rem; font-weight: 600; color: var(--text-muted); margin-bottom: 40px; text-decoration: none; padding: 10px 20px; background: var(--bg-page); border-radius: 50px; border: 1px solid var(--border-light); transition: all 0.3s ease;">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg> Instagram @williammolina_92
+                </a>
+                
+                <div class="card" style="max-width: 800px; padding: 35px; background: var(--bg-page); border-top: 4px solid var(--text-heading);">
+                    <p style="margin: 0; font-weight: 600; font-size: 1.1rem; line-height: 1.5;">Parece loucura, mas se você for procurar um consultor de crédito, os caras querem cobrar de <strong style="color: #ff3b30; font-size: 1.3rem;">R$ 1.500 a R$ 5.000</strong> pra te passar esse exato passo a passo que mostro no Destrava Crédito.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE PRODUCT / BENEFITS -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="text-center reveal" style="margin-bottom: 50px;">No Destrava Crédito 1.0, você tem o passo a passo para:</h2>
+            
+            <div class="benefits-grid reveal delay-1">
+                <div class="benefit-item">
+                    <h4>Limpeza do nome</h4>
+                    <p>como fazer seu nome sumir de mecanismos como Serasa ( e não tô falando de quitar a divida ).</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>Rating Bancário Alto</h4>
+                    <p>Como conseguir um Rating Alto para os próximos dias.</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>Aumento de Limite</h4>
+                    <p>Aumento em 60 dias - Ou seu primeiro cartão Black.</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>Financiamento para Carros</h4>
+                    <p>Como ter acesso às melhores taxas.</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>Seu primeiro imóvel</h4>
+                    <p>Financiamento liberado. Saia do aluguel de uma vez por todas.</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>Reputação BACEN</h4>
+                    <p>Como ter um nome 100% atualizado e de boa reputação no Banco Central.</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>Segredo Open Finance</h4>
+                    <p>Como tirar vantagem dele. (Mesmo que você ainda não saiba o que é).</p>
+                </div>
+                <div class="benefit-item">
+                    <h4>Crescimento Patrimonial</h4>
+                    <p>Use o dinheiro do banco pra construir seu império.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFFER SECTION -->
+    <section id="checkout" class="offer">
+        <div class="container">
+            <div class="offer-box text-center reveal">
+                <p style="text-decoration: line-through; color: var(--text-muted); font-weight: 600;">De R$ 497,00 por</p>
+                <div class="price-main">R$ 97,00</div>
+                <p style="font-size: 1.25rem; font-weight: 600; color: var(--text-heading);">Ou 12 X 9,28 ou R$97,00 à vista.</p>
+                
+                <p style="margin: 30px 0; font-weight: 600; color: var(--text-body);">Sem achismos. Sem "ver se vai" sozinho. Sem tentar no escuro.</p>
+                
+                <div style="max-width: 450px; margin: 0 auto;">
+                    <a href="https://pay.eduzz.com/SEU_ID" class="btn">QUERO DESTRAVAR MEU CRÉDITO A PARTIR DE HOJE</a>
+                </div>
+                
+                <div class="guarantee-seal">
+                    <div><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 5px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg></div>
+                    <div>
+                        <h3 style="font-size: 1.1rem; margin-bottom: 4px;">GARANTIA: 7 DIAS</h3>
+                        <p style="font-size: 0.9rem; margin: 0; line-height: 1.4;">Se você entrar e achar que não é pra você, é só solicitar o reembolso em até 7 dias e seu valor é 100% reembolsado. O risco é zero.</p>
+                    </div>
+                </div>
+                
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 30px;">Sua transação é protegida e 100% segura, e realizada pela Eduzz, uma das plataformas de pagamento online mais seguras do país.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq bg-surface">
+        <div class="container">
+            <h2 class="text-center reveal">Perguntas que passam pela cabeça antes de comprar</h2>
+            
+            <div class="faq-wrap reveal delay-1">
+                <div class="faq-row">
+                    <div class="faq-q">? Funciona mesmo para quem tem nome sujo? <span>+</span></div>
+                    <div class="faq-a">Sim! No curso mostramos exatamente como lidar com a reputação bancária independente do histórico negativo.</div>
+                </div>
+                <div class="faq-row">
+                    <div class="faq-q">? E se eu já tentei de tudo e não consegui? <span>+</span></div>
+                    <div class="faq-a">Muitas vezes as tentativas falham porque você está focando no dado errado (Score). O Rating é o que realmente importa.</div>
+                </div>
+                <div class="faq-row">
+                    <div class="faq-q">? Quanto tempo leva para ver resultado? <span>+</span></div>
+                    <div class="faq-a">Os primeiros resultados na reputação interna podem aparecer em poucos dias seguindo o passo a passo.</div>
+                </div>
+                <div class="faq-row">
+                    <div class="faq-q">? R$97 não é caro pra mim agora? <span>+</span></div>
+                    <div class="faq-a">O valor é simbólico comparado ao limite de crédito ou economia em juros de financiamento que você pode obter.</div>
+                </div>
+            </div>
+            
+            <div class="text-center reveal mt-4" style="margin-top: 40px; font-weight: 600; font-size: 0.9rem; color: var(--text-muted);">
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 4px;"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Pagamento 100% Seguro</span> &nbsp;|&nbsp; 
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 4px;"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg> Plataforma certificada</span> &nbsp;|&nbsp; 
+                <span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom; margin-right: 4px;"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg> Acesso imediato</span>
+            </div>
+
+            <div class="text-center reveal delay-1 mt-4" style="margin-top: 30px; max-width: 350px; margin-left: auto; margin-right: auto;">
+                <a href="https://pay.eduzz.com/SEU_ID" class="btn">LIBERAÇÃO DE ACESSO</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center" style="padding: 40px 0; font-size: 0.85rem; color: var(--text-muted);">
+        <div class="container">
+            <p>&copy; 2026 Destrava Crédito. Todos os direitos reservados.</p>
+            <p style="max-width: 600px; margin: 10px auto 0;">Esta é uma ferramenta de análise baseada em dados comportamentais. Os resultados podem variar e não garantir aprovação imediata de crédito. Suas informações são benéficas.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
