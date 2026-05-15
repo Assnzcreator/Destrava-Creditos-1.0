@@ -90,15 +90,37 @@ document.addEventListener('DOMContentLoaded', () => {
         counterObserver.observe(statsSection);
     }
 
-    // --- VSL PLAYER LOGIC ---
+    // --- YOUTUBE IFRAME API & VSL LOGIC ---
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var playerVsl;
+    var playerDepoimento;
+
+    window.onYouTubeIframeAPIReady = function() {
+        // Substitua 'SEU_ID_VSL' pelo código do seu vídeo no YouTube
+        playerVsl = new YT.Player('youtube-vsl', {
+            videoId: 'dQw4w9WgXcQ', // Vídeo de exemplo
+            playerVars: { 'autoplay': 0, 'controls': 1, 'rel': 0, 'modestbranding': 1, 'fs': 1 }
+        });
+
+        // Substitua 'SEU_ID_DEPOIMENTO' pelo código do seu vídeo no YouTube
+        playerDepoimento = new YT.Player('youtube-depoimento', {
+            videoId: 'dQw4w9WgXcQ', // Vídeo de exemplo
+            playerVars: { 'autoplay': 0, 'controls': 1, 'rel': 0, 'modestbranding': 1 }
+        });
+    };
+
     const vslOverlay = document.getElementById('vsl-overlay');
-    const vslPlayer = document.getElementById('vsl-player');
     
-    if (vslOverlay && vslPlayer) {
+    if (vslOverlay) {
         vslOverlay.addEventListener('click', () => {
             vslOverlay.style.display = 'none';
-            vslPlayer.style.display = 'block';
-            vslPlayer.play();
+            if (playerVsl && typeof playerVsl.playVideo === 'function') {
+                playerVsl.playVideo();
+            }
         });
     }
 

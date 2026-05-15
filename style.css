@@ -594,4 +594,20 @@ section {
     section { padding: 60px 0; }
     .card { padding: 24px; }
     .offer-box { padding: 40px 24px; }
+    
+    /* Reduce green intensity on mobile */
+    .orb-1 {
+        background: rgba(0, 230, 118, 0.15); /* Less intense green orb */
+        width: 400px; height: 400px;
+    }
+    .orb-3 {
+        background: rgba(0, 200, 83, 0.1);
+    }
+    .hero::before {
+        background-image: 
+            linear-gradient(rgba(0, 230, 118, 0.08) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(0, 230, 118, 0.08) 1px, transparent 1px);
+        mask-image: radial-gradient(ellipse at top center, black 10%, transparent 60%);
+        -webkit-mask-image: radial-gradient(ellipse at top center, black 10%, transparent 60%);
+    }
 }
