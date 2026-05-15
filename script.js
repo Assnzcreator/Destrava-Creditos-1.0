@@ -111,11 +111,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Autoplay após 3 segundos
         setTimeout(() => {
-            // Só executa o autoplay se o overlay ainda estiver visível (ou seja, o usuário não clicou ainda)
             if (vslOverlay.style.display !== 'none') {
                 vslOverlay.style.display = 'none';
                 if (playerVsl && typeof playerVsl.playVideo === 'function') {
-                    // Tenta dar o play. Nota: Navegadores modernos podem mutar o som se não houver interação prévia.
+                    // Para o autoplay funcionar sem clique, o vídeo PRECISA estar mudo (regra dos navegadores)
+                    playerVsl.mute(); 
                     playerVsl.playVideo();
                 }
             }
