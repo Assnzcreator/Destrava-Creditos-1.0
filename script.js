@@ -21,41 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- TEXT ROTATOR (Badge) ---
+    // Removido a pedido do usuário para manter estático
     const badgeText = document.getElementById('badge-text');
     if (badgeText) {
-        const phrases = [
-            "PARA PESSOA FÍSICA E MEIs",
-            "AUMENTE SEU LIMITE DE CRÉDITO",
-            "DOMINE O SEU RATING BANCÁRIO",
-            "VANTAGEM NO OPEN FINANCE",
-            "SAIA DO ALUGUEL"
-        ];
-        let currentPhrase = 0;
-
-        setInterval(() => {
-            // Slide up and fade out
-            badgeText.style.transition = 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
-            badgeText.style.opacity = '0';
-            badgeText.style.transform = 'translateY(-15px)';
-            
-            setTimeout(() => {
-                // Change text
-                currentPhrase = (currentPhrase + 1) % phrases.length;
-                badgeText.textContent = phrases[currentPhrase];
-                
-                // Teleport to bottom instantly without animation
-                badgeText.style.transition = 'none';
-                badgeText.style.transform = 'translateY(15px)';
-                
-                // Force browser reflow to apply the instant teleport
-                void badgeText.offsetWidth;
-                
-                // Slide up to center and fade in
-                badgeText.style.transition = 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)';
-                badgeText.style.opacity = '1';
-                badgeText.style.transform = 'translateY(0px)';
-            }, 400); // Wait for fade out
-        }, 3500); // Change every 3.5 seconds
+        badgeText.textContent = "PARA PESSOA FÍSICA E MEIs";
     }
 
     // --- NUMBER COUNTER ANIMATION ---
