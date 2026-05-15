@@ -103,13 +103,30 @@ document.addEventListener('DOMContentLoaded', () => {
         // Substitua 'SEU_ID_VSL' pelo código do seu vídeo no YouTube
         playerVsl = new YT.Player('youtube-vsl', {
             videoId: 'dQw4w9WgXcQ', // Vídeo de exemplo
-            playerVars: { 'autoplay': 0, 'controls': 1, 'rel': 0, 'modestbranding': 1, 'fs': 1 }
+            playerVars: { 
+                'autoplay': 0, 
+                'controls': 0, // Esconde a barra de progresso e botões do YouTube
+                'rel': 0, // Evita vídeos recomendados de outros canais
+                'modestbranding': 1, // Minimiza a logo do YouTube
+                'showinfo': 0, 
+                'disablekb': 1, // Desativa atalhos de teclado do youtube
+                'iv_load_policy': 3, // Esconde anotações
+                'fs': 0 // Desativa tela cheia
+            }
         });
 
         // Substitua 'SEU_ID_DEPOIMENTO' pelo código do seu vídeo no YouTube
         playerDepoimento = new YT.Player('youtube-depoimento', {
             videoId: '-qrmO-UamWY', // Vídeo de depoimento enviado
-            playerVars: { 'autoplay': 0, 'controls': 1, 'rel': 0, 'modestbranding': 1 }
+            playerVars: { 
+                'autoplay': 0, 
+                'controls': 0, // Esconde tudo
+                'rel': 0, 
+                'modestbranding': 1,
+                'showinfo': 0,
+                'iv_load_policy': 3,
+                'fs': 0
+            }
         });
     };
 
