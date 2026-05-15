@@ -339,6 +339,26 @@ section {
     overflow: hidden;
 }
 
+/* Hack para esconder o topo (título) e o fundo (logo/barra) do YouTube */
+.video-cleaner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+}
+
+.video-cleaner iframe {
+    position: absolute;
+    top: -65px; /* Sobe o vídeo para esconder o título do canal */
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 130px); /* Aumenta a altura para esconder a barra de baixo */
+    pointer-events: auto;
+}
+
 .play-icon {
     width: 80px;
     height: 80px;
