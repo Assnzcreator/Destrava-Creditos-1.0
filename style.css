@@ -608,7 +608,8 @@ section {
 
 /* Mobile */
 @media (max-width: 768px) {
-    .hero h1 { font-size: 2.5rem; }
+    .hero { padding-top: 40px; }
+    .hero h1 { font-size: 2.2rem; }
     .stats-container { flex-direction: column; gap: 20px; }
     .price-main { font-size: 3.5rem; }
     section { padding: 60px 0; }
@@ -629,5 +630,9 @@ section {
             linear-gradient(90deg, rgba(0, 230, 118, 0.08) 1px, transparent 1px);
         mask-image: radial-gradient(ellipse at top center, black 10%, transparent 60%);
         -webkit-mask-image: radial-gradient(ellipse at top center, black 10%, transparent 60%);
+    }
+
+    .hero .reveal[style*="flex-direction: column"] {
+        margin-bottom: 15px !important;
     }
 }
